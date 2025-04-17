@@ -126,4 +126,4 @@ if st.button("Run Multiverse Simulation"):
     if user_query:
         agent_index = int(timeline_choice.split()[-1]) - 1
         reply = agents[agent_index].run(user_query)
-        st.markdown(f
+        st.markdown(f"**Agent {timeline_choice} Response:** {reply}")

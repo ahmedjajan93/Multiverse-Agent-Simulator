@@ -7,3 +7,4 @@ requests
 sentence-transformers
 faiss-cpu
 torch
+langchain_community

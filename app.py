@@ -12,7 +12,7 @@ import os
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 # Initialize LLM
 llm = ChatOpenAI(
-                model="mistralai/mistral-small-3.1-24b-instruct:free",
+                model="mythomax-l2-13b",
                 base_url="https://openrouter.ai/api/v1",)
 
 embedding_model = HuggingFaceEmbeddings(

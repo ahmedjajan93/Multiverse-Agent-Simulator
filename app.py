@@ -37,7 +37,7 @@ def risk_tool(input):
     return "RiskEvaluator: Bootstrapping offers control and safety but limits scaling."
 
 custom_tools = [
-    Tool(name="FinanceTool", func=finance_tool, description="Analyzes financial options."),
+    Tool(StructuredTool.from_function(finance_tool), description="Analyzes financial options."),
     Tool(name="RiskEvaluator", func=risk_tool, description="Evaluates risk of decisions.")
 ]
 
